@@ -2,17 +2,186 @@
 <html>
   <head>
     <meta charset = "utf-8">
-    <meta name = "description" content = "Description goes here">
+    <meta name = "description" content = "Personal Portfolio Website">
     <meta name = "keywords" content = "HTML, CSS, XML, JavaScript">
     <meta name = "author" content = "Adrian Iannantuono">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-    <title>Title Goes Here</title>
+    <title>Adrian Iannantuono</title>
 
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css">
-  </head>
+    <link href="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://zikro.gr/dbg/html/fullPage/jquery.fullpage.js"></script>
 
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+    rel="stylesheet"
+    />
+</head>
+
+  <body id="body">
+
+      <div id="fullpage">
+        <div class="section" id="home">
+          <div class="name" style="width: 60%;margin-left: 15%; color: white">
+            <h1 style="font-size: 4em; line-height: 40px">Adrian Iannantuono</h1>
+            <h2 style="opacity: 50%">Computer Engineering Student. Developer. Designer</h2>
+            <button type="button" class="btn btn-light m-1" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Contact</button>
+            <button type="button" class="btn btn-primary btn-floating m-1" onclick="window.open('https://www.linkedin.com/in/adrianiannantuono/','_blank')" style="background-color: #0082ca;">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-floating m-1" onclick="window.open('https://github.com/adrianiannantuono','_blank')" style="background-color: #333333;">
+              <i class="fab fa-github"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light btn-floating" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'});" style="position: absolute; bottom: 10px; left:50%; right: 50%"> <i class="fas fa-angle-down"></i></button>
+          </div>
+        </div>
+        <div class="section" id="experience">
+          <div style="margin-left: 15%; margin-right: 15%; color: white">
+            <h1>About me</h1>
+            <h4>Student at The University of Ottawa currently working towards becoming a professional engineer. 
+              - 5+ years of programming experience (Java, Python, C, C++, HTML, JavaScript, Vue.js)</h4>
+          </div>
+        </div>
+        <div class="section" id="projects">
+          <div style="margin-left: 15%; margin-right: 15%; color: white">
+            <h1>Projects</h1>
+            <h4>🚧 🔧 Under Construction 🔧 🚧</h4>
+          </div>
+        </div>
+        <div class="section" id="contact">
+          <div style="margin-left: 15%; margin-right: 15%; color: white;">
+            <h1>Contact</h1>
+            <a href="mailto:aiannantuono@me.com">aiannantuono@me.com</a>
+          </div>
+        </div>
+       <!-- <div class="section fp-auto-height" id="foot">
+          <footer style="background:rgb(248,249,250)">
+              <div class="container text-center text-md-left mt-5">
+
+                <div class="row mt-3">
+
+                  <div style="margin-top:40px;" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    <h6 class="font-weight-bold">Adrian Iannantuono</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Programmer. Developer. Creator.</p>
+
+                  </div>
+
+                  <div style="margin-top:40px;" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <h6 class="font-weight-bold">Products & Services</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text">
+                      <a href="#!">3D Printing</a>
+                    </p>
+                    <p class="footer-text">
+                      <a href="#!">Software & Hardware Solutions</a>
+                    </p>
+                    <p class="footer-text">
+                      <a href="#!">Aerial Photography & Mapping</a>
+                    </p>
+                    <p class="footer-text">
+                      <a href="#!">Photography & Videography</a>
+                    </p>
+
+                  </div>
+
+
+
+                  <div style="margin-top:40px;" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+     
+                    <h6 class="font-weight-bold">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text">
+                      <a href="#!">Your Account</a>
+                    </p>
+                    <p class="footer-text">
+                      <a href="#!">Become an Affiliate</a>
+                    </p>
+                    <p class="footer-text">
+                      <a href="#!">Shipping Rates</a>
+                    </p>
+                    <p class="footer-text">
+                      <a href="#!">Help</a>
+                    </p>
+
+                  </div>
+
+
+
+                  <div style="margin-top:40px;" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+
+                    <h6 class="font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="footer-text">
+                      <i class="fas fa-envelope"></i><a href="mailto:aiannantuono@me.com"> aiannantuono@me.com</a></p>
+                    <p class="footer-text">
+                      <i class="fas fa-phone"></i><a href="/"></a></p>
+                    <p class="footer-text">
+                      <button type="button" onclick="op_contact()" class="btn btn-primary btn-sm">Get In Touch</button>
+                  </div>
+
+
+                </div>
+
+
+              </div>
+
+
+              <div class="social">
+                <div class="social-link" style="background-image: url('/images/git-hub-logo.png');">
+                  <a href="https://github.com/adrianiannantuono" target="_blank" class="social-link-a"></a>
+                </div>
+                <div class="social-link" style="background-image: url('/images/linkedin-logo.png');">
+                  <a href="https://www.linkedin.com/in/adrianiannantuono/" target="_blank" class="social-link-a"></a>
+                </div>
+              </div>
+
+              <div class="footer-copyright text-center py-3" style="font-size: 13px;">© 2021 Copyright
+                <a href="https://www.adrianiannantuono.ca/"> adrianiannantuono.ca</a>
+              </div>
+
+
+          </footer>
+        </div> -->
+
+      </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          navigationPosition: 'left',
+          navigationTooltips: ['Home', 'Experience', 'Projects', 'Contact'],
+          showActiveTooltip: false,
+          css3: true,
+          scrollingSpeed: 550,
+          navigation: true,
+          slidesNavigation: true,
+          responsiveHeight: 330,
+          dragAndMove: true,
+          dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+          controlArrows: false,
+        });
+      });
+    </script>
+        <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
   </body>
-<html>
+</html>

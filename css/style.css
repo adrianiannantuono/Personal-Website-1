@@ -1,0 +1,35 @@
+* {
+	font-family: sans-serif;
+}
+div {
+	color: black;
+	font-family: Avenir;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: white;
+}
+#experience {
+	background: rgb(82, 82, 82);
+}
+#projects {
+	background: rgb(82, 82, 82);
+}
+#contact {
+	background: rgb(82, 82, 82);
+}
+#home {
+	background: linear-gradient(-45deg, rgba(232,79,139,1), rgba(105,9,133,1), rgba(35,168,193,1), rgba(30,96,144,1));
+	background-size: 400% 400%;
+	animation: gradient 120s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
